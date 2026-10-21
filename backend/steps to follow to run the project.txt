@@ -28,7 +28,7 @@ steps to follow to run the project :
 
    c) to add tables : py manage.py migrate
 
-   d) run the project : py manage.py runserver
+   d) run the project : py manage.py runserver 8092
 
   --- dummy data ----
 
