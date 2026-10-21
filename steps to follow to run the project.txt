@@ -8,7 +8,7 @@ steps to follow to run the project :
 
 4) create database manually in MySQL with db name : edutrackpython 
 
-5) also add the user in table 
+5) also add the user in table { firstly you have to run migrate command, then tables will be created}
 
 3) open the terminal - 2 terminal - 
 
@@ -32,7 +32,7 @@ steps to follow to run the project :
 
   --- dummy data ----
 
-INSERT INTO auth_user
+INSERT INTO users_user
 (
     id,
     password,
