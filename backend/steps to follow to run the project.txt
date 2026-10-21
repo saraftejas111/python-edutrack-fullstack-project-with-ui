@@ -1,0 +1,78 @@
+steps to follow to run the project :
+
+1) download and extract the zip folder
+
+2) open that extracted folder in vs-code 
+
+3) make sure to check database credentials in settings.py
+
+4) create database manually in MySQL with db name : edutrackpython 
+
+5) also add the user in table 
+
+3) open the terminal - 2 terminal - 
+
+     ** commands ** 
+   
+  ----  1st terminal -----
+
+   a) npm install
+
+   b) for UI - npm run dev
+
+ ----  2st terminal -----
+
+   a) cd backend
+
+   b) for backend : py -m pip install -r requirements.txt
+
+   c) to add tables : py manage.py migrate
+
+   d) run the project : py manage.py runserver
+
+  --- dummy data ----
+
+INSERT INTO auth_user
+(
+    id,
+    password,
+    last_login,
+    is_superuser,
+    username,
+    first_name,
+    last_name,
+    email,
+    is_staff,
+    is_active,
+    date_joined,
+    role
+)
+VALUES
+(
+    1,
+    'tka123',
+    '2026-10-21 06:35:48.278068',
+    1,
+    'tka',
+    'tka',
+    'jbk',
+    'tka@jbk.com',
+    1,
+    1,
+    '2026-10-21 06:19:58.905523',
+    'admin'
+),
+(
+    2,
+    'atul123',
+    NULL,
+    0,
+    'atul',
+    'Atul',
+    'Sir',
+    'atul@tka.com',
+    0,
+    1,
+    '2026-10-21 06:53:32.420172',
+    'faculty'
+);
